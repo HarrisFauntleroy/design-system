@@ -30,7 +30,8 @@
     "test:ci": "yarn test --ci --coverage --maxWorkers=2",
     "test:watch": "yarn test --watchAll",
     "type-check": "tsc --noEmit",
-    "watch": "yarn type-check --watch"
+    "watch": "yarn type-check --watch",
+    "prepare": "husky install"
   },
   "jest": {
     "coverageThreshold": {
@@ -76,7 +77,6 @@
     "database": "*",
     "date-fns": "^2.30.0",
     "dayjs": "^1.11.8",
-    "embla-carousel-react": "^8.0.0-rc07",
     "i18next": "^22.0.4",
     "i18next-browser-languagedetector": "^7.0.2",
     "i18next-http-backend": "^2.2.1",
