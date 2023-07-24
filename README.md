@@ -1,8 +1,8 @@
-# Design System
+# Design System 🎨
 
 **⚠🚧 WORK IN PROGRESS SIDE PROJECT 🚧⚠️**
 
-[![CI Actions 🚀🤖](https://github.com/HarrisFauntleroy/website-image-generator/actions/workflows/ci.yml/badge.svg)](https://github.com/HarrisFauntleroy/website-image-generator/actions/workflows/ci.yml)[![Code Coverage 📊](https://github.com/HarrisFauntleroy/website-image-generator/actions/workflows/coverage.yml/badge.svg)](https://github.com/HarrisFauntleroy/website-image-generator/actions/workflows/coverage.yml)![GitHub commit activity](https://img.shields.io/github/commit-activity/w/HarrisFauntleroy/design-system?style=flat)
+[![CI Actions 🚀🤖](https://github.com/HarrisFauntleroy/design-system/actions/workflows/ci.yml/badge.svg)](https://github.com/HarrisFauntleroy/design-system/actions/workflows/ci.yml)[![Code Coverage 📊](https://github.com/HarrisFauntleroy/design-system/actions/workflows/coverage.yml/badge.svg)](https://github.com/HarrisFauntleroy/design-system/actions/workflows/coverage.yml)![GitHub commit activity](https://img.shields.io/github/commit-activity/w/HarrisFauntleroy/design-system?style=flat)
 
 <!-- PROJECT_DESCRIPTION -->
 
