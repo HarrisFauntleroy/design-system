@@ -15,16 +15,25 @@
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/KaTeX/KaTeX)
 [![Financial Contributors on Open Collective](https://opencollective.com/katex/all/badge.svg?label=financial+contributors)](https://opencollective.com/katex)
 
-KaTeX is a fast, easy-to-use JavaScript library for TeX math rendering on the web.
+KaTeX is a fast, easy-to-use JavaScript library for TeX math rendering on the
+web.
 
- * **Fast:** KaTeX renders its math synchronously and doesn't need to reflow the page. See how it compares to a competitor in [this speed test](https://www.intmath.com/cg5/katex-mathjax-comparison.php).
- * **Print quality:** KaTeX's layout is based on Donald Knuth's TeX, the gold standard for math typesetting.
- * **Self contained:** KaTeX has no dependencies and can easily be bundled with your website resources.
- * **Server side rendering:** KaTeX produces the same output regardless of browser or environment, so you can pre-render expressions using Node.js and send them as plain HTML.
+- **Fast:** KaTeX renders its math synchronously and doesn't need to reflow the
+  page. See how it compares to a competitor in
+  [this speed test](https://www.intmath.com/cg5/katex-mathjax-comparison.php).
+- **Print quality:** KaTeX's layout is based on Donald Knuth's TeX, the gold
+  standard for math typesetting.
+- **Self contained:** KaTeX has no dependencies and can easily be bundled with
+  your website resources.
+- **Server side rendering:** KaTeX produces the same output regardless of
+  browser or environment, so you can pre-render expressions using Node.js and
+  send them as plain HTML.
 
-KaTeX is compatible with all major browsers, including Chrome, Safari, Firefox, Opera, Edge, and IE 11.
+KaTeX is compatible with all major browsers, including Chrome, Safari, Firefox,
+Opera, Edge, and IE 11.
 
-KaTeX supports much (but not all) of LaTeX and many LaTeX packages. See the [list of supported functions](https://katex.org/docs/supported.html).
+KaTeX supports much (but not all) of LaTeX and many LaTeX packages. See the
+[list of supported functions](https://katex.org/docs/supported.html).
 
 Try out KaTeX [on the demo page](https://katex.org/#demo)!
 
@@ -37,51 +46,68 @@ Try out KaTeX [on the demo page](https://katex.org/#demo)!
 <!-- KaTeX requires the use of the HTML5 doctype. Without it, KaTeX may not render properly -->
 <html>
   <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css"
+      integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn"
+      crossorigin="anonymous"
+    />
 
     <!-- The loading of KaTeX is deferred to speed up page rendering -->
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx" crossorigin="anonymous"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"
+      integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- To automatically render math in text elements, include the auto-render extension: -->
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
-        onload="renderMathInElement(document.body);"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
+      integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+      crossorigin="anonymous"
+      onload="renderMathInElement(document.body);"
+    ></script>
   </head>
   ...
 </html>
 ```
 
-You can also [download KaTeX](https://github.com/KaTeX/KaTeX/releases) and host it yourself.
+You can also [download KaTeX](https://github.com/KaTeX/KaTeX/releases) and host
+it yourself.
 
-For details on how to configure auto-render extension, refer to [the documentation](https://katex.org/docs/autorender.html).
+For details on how to configure auto-render extension, refer to
+[the documentation](https://katex.org/docs/autorender.html).
 
 ### API
 
-Call `katex.render` to render a TeX expression directly into a DOM element.
-For example:
+Call `katex.render` to render a TeX expression directly into a DOM element. For
+example:
 
 ```js
 katex.render("c = \\pm\\sqrt{a^2 + b^2}", element, {
-    throwOnError: false
+  throwOnError: false,
 });
 ```
 
 Call `katex.renderToString` to generate an HTML string of the rendered math,
-e.g., for server-side rendering.  For example:
+e.g., for server-side rendering. For example:
 
 ```js
 var html = katex.renderToString("c = \\pm\\sqrt{a^2 + b^2}", {
-    throwOnError: false
+  throwOnError: false,
 });
 // '<span class="katex">...</span>'
 ```
 
-Make sure to include the CSS and font files in both cases.
-If you are doing all rendering on the server, there is no need to include the
-JavaScript on the client.
+Make sure to include the CSS and font files in both cases. If you are doing all
+rendering on the server, there is no need to include the JavaScript on the
+client.
 
 The examples above use the `throwOnError: false` option, which renders invalid
 inputs as the TeX source code in red (by default), with the error message as
-hover text.  For other available options, see the
+hover text. For other available options, see the
 [API documentation](https://katex.org/docs/api.html),
 [options documentation](https://katex.org/docs/options.html), and
 [handling errors documentation](https://katex.org/docs/error.html).
@@ -94,7 +120,8 @@ Learn more about using KaTeX [on the website](https://katex.org)!
 
 ### Code Contributors
 
-This project exists thanks to all the people who contribute code. If you'd like to help, see [our guide to contributing code](CONTRIBUTING.md).
+This project exists thanks to all the people who contribute code. If you'd like
+to help, see [our guide to contributing code](CONTRIBUTING.md).
 <a href="https://github.com/KaTeX/KaTeX/graphs/contributors"><img src="https://contributors-svg.opencollective.com/katex/contributors.svg?width=890&button=false" alt="Code contributors" /></a>
 
 ### Financial Contributors
@@ -107,7 +134,8 @@ Become a financial contributor and help us sustain our community.
 
 #### Organizations
 
-Support this project with your organization. Your logo will show up here with a link to your website.
+Support this project with your organization. Your logo will show up here with a
+link to your website.
 
 <a href="https://opencollective.com/katex/organization/0/website"><img src="https://opencollective.com/katex/organization/0/avatar.svg" alt="Organization 1"></a>
 <a href="https://opencollective.com/katex/organization/1/website"><img src="https://opencollective.com/katex/organization/1/avatar.svg" alt="Organization 2"></a>

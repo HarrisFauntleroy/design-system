@@ -9,23 +9,23 @@
     "preview": "vite preview",
     "format": "prettier --write .",
     "lint": "eslint . --color --plugin file-progress --rule \"file-progress/activate: 1\"",
-    "lint:fix": "yarn lint --fix",
+    "lint:fix": "pnpm lint --fix",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "serve-storybook": "http-server storybook-static --port 6007 --silent",
     "chromatic": "npx chromatic --project-token=chpt_b1ce203545fcc69",
     "test": "jest --passWithNoTests",
-    "test:ci": "yarn test --ci --coverage --maxWorkers=2",
-    "test:watch": "yarn test --watchAll",
+    "test:ci": "pnpm test --ci --coverage --maxWorkers=2",
+    "test:watch": "pnpm test --watchAll",
     "type-check": "tsc --noEmit",
-    "watch": "yarn type-check --watch",
+    "watch": "pnpm type-check --watch",
     "prepare": "husky install",
     "size": "git count-objects --human-readable"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "yarn format",
-      "yarn lint:fix"
+      "pnpm format",
+      "pnpm lint:fix"
     ]
   },
   "prettier": {
@@ -107,10 +107,13 @@
       ]
     },
     "ignorePatterns": [
-      ".yarn",
+      ".pnpm",
       "dist",
       "generated",
-      "node_modules"
+      "node_modules",
+      "yarn",
+      "storybook-static",
+      "styles"
     ],
     "root": true
   },

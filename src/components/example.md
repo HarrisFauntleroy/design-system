@@ -24,8 +24,7 @@ export default Component;
 
 ###### H6
 
-_italic_ and **bold** text.
-[link](https://example.com).
+_italic_ and **bold** text. [link](https://example.com).
 ![image](https://raw.githubusercontent.com/HarrisFauntleroy/harrisfauntleroy.com/main/public/favicon-32x32.png)
 
 A paragraph with _emphasis_ and **strong importance**.
@@ -87,9 +86,11 @@ $$
 \lambda = \frac{Ln{2}}{T_{half}}
 $$
 
-where, $T_{half}$ is the half-life of the radioactive element. The half-life is the time it takes for half of a sample of a radioactive element to decay.
+where, $T_{half}$ is the half-life of the radioactive element. The half-life is
+the time it takes for half of a sample of a radioactive element to decay.
 
-Secondly, the Counts Per Minute(CPM) to Sieverts (Sv) conversion. The Sievert is a unit of absorbed radiation dose.
+Secondly, the Counts Per Minute(CPM) to Sieverts (Sv) conversion. The Sievert is
+a unit of absorbed radiation dose.
 
 $$
  X\, (Sv\,/ h) = R\, (CPM) \times Y\, ( \frac{Sv}{CPM})

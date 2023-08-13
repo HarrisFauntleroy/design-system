@@ -22,7 +22,8 @@
 
 ## Features 💫
 
-- WIP 🚧
+- Markdown supporting Github Flavoured Markdown, Katex, Table of Contents and
+  eventually mermaid charts.
 
 <!-- LIST OF FEATURES -->
 
@@ -77,4 +78,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Disclaimer 🚨
 
-This software is currently a work in progress and is considered in ALPHA state. Features will appear and disappear, APIs will be changed, bugs will be introduced, your feedback is always welcome! 🚧🔧
+This software is currently a work in progress and is considered in ALPHA state.
+Features will appear and disappear, APIs will be changed, bugs will be
+introduced, your feedback is always welcome! 🚧🔧
