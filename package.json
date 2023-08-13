@@ -1,26 +1,26 @@
 {
   "name": "design-system",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "1.0.0",
   "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "dev": "vite",
+    "build-storybook": "storybook build",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "format": "prettier --write .",
     "lint": "eslint . --color --plugin file-progress --rule \"file-progress/activate: 1\"",
     "lint:fix": "pnpm lint --fix",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "dev": "storybook dev -p 6006",
     "serve-storybook": "http-server storybook-static --port 6007 --silent",
     "chromatic": "npx chromatic --project-token=chpt_b1ce203545fcc69",
-    "test": "jest --passWithNoTests",
-    "test:ci": "pnpm test --ci --coverage --maxWorkers=2",
-    "test:watch": "pnpm test --watchAll",
-    "type-check": "tsc --noEmit",
-    "watch": "pnpm type-check --watch",
-    "prepare": "husky install",
-    "size": "git count-objects --human-readable"
+    "test": "vitest",
+    "test:cov": "vitest run --coverage",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
@@ -154,7 +154,10 @@
     "rehype-katex": "^6.0.3",
     "rehype-stringify": "^9.0.3",
     "remark-gfm": "^3.0.1",
-    "remark-math": "^5.1.1"
+    "remark-math": "^5.1.1",
+    "tsup": "^7.2.0",
+    "vite-plugin-dts": "^3.5.2",
+    "vitest": "^0.34.1"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.2.2",

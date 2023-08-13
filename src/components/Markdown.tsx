@@ -1,5 +1,7 @@
 import { useMantineColorScheme } from "@mantine/core";
 import { PropsWithChildren, createElement } from "react";
+import { SpecialComponents } from "react-markdown/lib/ast-to-react";
+import { NormalComponents } from "react-markdown/lib/complex-types";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import rehypeFormat from "rehype-format";
 import rehypeKatex from "rehype-katex";
@@ -27,6 +29,10 @@ function addToTableOfContents({
   }
 }
 
+type MarkdownComponents = Partial<
+  Omit<NormalComponents, keyof SpecialComponents> & SpecialComponents
+>;
+
 const renderers = {
   h1: addToTableOfContents,
   h2: addToTableOfContents,
@@ -42,7 +48,7 @@ export default function Markdown({ source }: { source: string }) {
   return (
     <ReactMarkdown
       className={`markdown-body markdown-body-${colorScheme}`}
-      components={renderers}
+      components={renderers as MarkdownComponents}
       remarkPlugins={[remarkGfm, remarkMath]}
       rehypePlugins={[rehypeKatex, rehypeFormat, rehypeStringify]}
     >
