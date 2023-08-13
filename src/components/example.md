@@ -2,6 +2,8 @@
 
 1. [Introduction](#introduction)
 
+Press CMD+J to toggle theme
+
 ```jsx
 // This is a code block
 import React from "react";
