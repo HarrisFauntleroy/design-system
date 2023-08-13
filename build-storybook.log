@@ -1,0 +1,127 @@
+@storybook/cli v7.2.3
+
+info => Cleaning outputDir: /var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf
+info => Loading presets
+info => Building manager..
+info => Manager built (139 ms)
+info => Copying static files: /Users/harrisfauntleroy/Documents/code/personal/design-system/node_modules/.pnpm/@storybook+manager@7.2.3/node_modules/@storybook/manager/static at /var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/sb-common-assets
+WARN No story files found for the specified pattern: src/**/*.mdx
+vite v4.4.9 building for production...
+
+./sb-common-assets/fonts.css doesn't exist at build time, it will remain unchanged to be resolved at runtime
+transforming...
+node_modules/.pnpm/telejson@7.1.0/node_modules/telejson/dist/index.mjs (1394:15) Use of eval in "node_modules/.pnpm/telejson@7.1.0/node_modules/telejson/dist/index.mjs" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/.pnpm/telejson@7.1.0/node_modules/telejson/dist/index.mjs (1397:18) Use of eval in "node_modules/.pnpm/telejson@7.1.0/node_modules/telejson/dist/index.mjs" is strongly discouraged as it poses security risks and may cause issues with minification.
+✓ 1705 modules transformed.
+rendering chunks...
+computing gzip size...
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Size3-Regular-6ab6b62e.woff              4.42 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Size4-Regular-a4af7d41.woff2             4.93 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Size2-Regular-d04c5421.woff2             5.21 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Size1-Regular-6b47c401.woff2             5.47 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Size4-Regular-99f9c675.woff              5.98 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Size2-Regular-2014c523.woff              6.19 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Size1-Regular-c943cc98.woff              6.50 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Caligraphic-Regular-5d53e70a.woff2       6.91 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Caligraphic-Bold-de7701e4.woff2          6.91 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Size3-Regular-500e04d5.ttf               7.59 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Caligraphic-Regular-3398dd02.woff        7.66 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Caligraphic-Bold-1ae6bd74.woff           7.72 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Script-Regular-036d4e95.woff2            9.64 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_SansSerif-Regular-68e8c73e.woff2        10.34 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Size4-Regular-c647367d.ttf              10.36 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Script-Regular-d96cdf2b.woff            10.59 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Fraktur-Regular-51814d27.woff2          11.32 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Fraktur-Bold-74444efd.woff2             11.35 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Size2-Regular-a6b2099f.ttf              11.51 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_SansSerif-Italic-00b26ac8.woff2         12.03 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_SansSerif-Bold-e99ae511.woff2           12.22 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Size1-Regular-95b6d2f1.ttf              12.23 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_SansSerif-Regular-11e4dc8a.woff         12.32 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Caligraphic-Regular-ed0b7437.ttf        12.34 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Caligraphic-Bold-07d8e303.ttf           12.37 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/iframe.html                                          12.71 kB │ gzip:   3.57 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Fraktur-Regular-5e28753b.woff           13.21 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Fraktur-Bold-9be7ceb8.woff              13.30 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Typewriter-Regular-71d517d6.woff2       13.57 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_SansSerif-Italic-91ee6750.woff          14.11 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_SansSerif-Bold-ece03cfd.woff            14.41 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Typewriter-Regular-e14fed02.woff        16.03 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Math-BoldItalic-dc47344d.woff2          16.40 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Math-Italic-7af58c5e.woff2              16.44 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Script-Regular-1c67f068.ttf             16.65 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Main-BoldItalic-99cd42a3.woff2          16.78 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Main-Italic-97479ca6.woff2              16.99 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Math-BoldItalic-850c0af5.woff           18.67 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Math-Italic-8a8d2445.woff               18.75 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Main-BoldItalic-a6f7ec0d.woff           19.41 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_SansSerif-Regular-f36ea897.ttf          19.44 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Fraktur-Regular-1e6f9579.ttf            19.57 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Fraktur-Bold-9163df9c.ttf               19.58 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Main-Italic-f1d6ef86.woff               19.68 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_SansSerif-Italic-3931dd81.ttf           22.36 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_SansSerif-Bold-1ece03f7.ttf             24.50 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Main-Bold-0f60d1b8.woff2                25.32 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Main-Regular-c2342cd8.woff2             26.27 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Typewriter-Regular-f01f3e87.ttf         27.56 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_AMS-Regular-0cdd387c.woff2              28.08 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Main-Bold-c76c5d69.woff                 29.91 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Main-Regular-c6368d87.woff              30.77 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Math-BoldItalic-f9377ab0.ttf            31.20 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Math-Italic-08ce98e5.ttf                31.31 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Main-BoldItalic-70ee1f64.ttf            32.97 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_AMS-Regular-30da91e8.woff               33.52 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Main-Italic-0d85ae7c.ttf                33.58 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Main-Bold-138ac28d.ttf                  51.34 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_Main-Regular-d0332f52.ttf               53.58 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/KaTeX_AMS-Regular-68534840.ttf                63.63 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/Markdown-11bdc6c6.css                         51.06 kB │ gzip:  12.42 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/index-d475d2ea.js                              0.21 kB │ gzip:   0.17 kB │ map:     0.90 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/_commonjs-dynamic-modules-302442b1.js          0.30 kB │ gzip:   0.24 kB │ map:     0.12 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/chunk-MSDTXLE7-e8876087.js                     0.33 kB │ gzip:   0.28 kB │ map:     1.37 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/WithTooltip-YBG737T3-38b2299d.js               0.52 kB │ gzip:   0.31 kB │ map:     0.11 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/syntaxhighlighter-4OVWVELQ-a1903233.js         0.54 kB │ gzip:   0.34 kB │ map:     0.12 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/preview-78853510.js                            0.58 kB │ gzip:   0.37 kB │ map:     0.65 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/index-56502c4c.js                              0.62 kB │ gzip:   0.39 kB │ map:     4.36 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/preview-5ef354f3.js                            0.69 kB │ gzip:   0.49 kB │ map:     4.19 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/_commonjsHelpers-de833af9.js                   0.75 kB │ gzip:   0.43 kB │ map:     0.11 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/index-356e4a49.js                              0.81 kB │ gzip:   0.51 kB │ map:     3.32 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/index-8d47fad6.js                              0.84 kB │ gzip:   0.55 kB │ map:     4.28 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/preview-b79ea209.js                            0.90 kB │ gzip:   0.60 kB │ map:     3.09 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/preview-a60aa466.js                            2.40 kB │ gzip:   1.25 kB │ map:    11.55 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/index-d37d4223.js                              2.63 kB │ gzip:   1.30 kB │ map:     7.54 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/Git-DZ2D5ZUL-6ca74cd2.js                       3.06 kB │ gzip:   1.00 kB │ map:     7.30 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/preview-770cc08b.js                            3.22 kB │ gzip:   1.39 kB │ map:    10.44 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/Editing-7QFB6ZMG-a75b9a4e.js                   4.02 kB │ gzip:   1.12 kB │ map:    10.20 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/iframe-5ac5d544.js                             4.17 kB │ gzip:   1.65 kB │ map:     4.91 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/OS-YZ2Y4VYS-57059e39.js                        5.57 kB │ gzip:   2.20 kB │ map:    10.02 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/index-61bf1805.js                              7.21 kB │ gzip:   2.95 kB │ map:    15.83 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/People-OD4EV7WZ-e23c0f1f.js                    7.64 kB │ gzip:   2.20 kB │ map:    16.39 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/preview-d8c963a4.js                            7.67 kB │ gzip:   1.60 kB │ map:    14.41 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/Documents-SGWAY3KW-a46f097b.js                 8.11 kB │ gzip:   1.61 kB │ map:    20.15 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/preview-25cb0eda.js                            8.33 kB │ gzip:   3.21 kB │ map:    29.67 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/Devices-SUYACUPO-5f5f7f3c.js                  11.12 kB │ gzip:   2.43 kB │ map:    24.88 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/GlobalScrollAreaStyles-4LLX2B3H-0bcdfdce.js   15.12 kB │ gzip:   2.85 kB │ map:    21.52 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/Logos-SJTNNI74-dfca754f.js                    15.65 kB │ gzip:   5.34 kB │ map:    30.10 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/Wayfinding-BB4H7CHP-0d20a672.js               19.02 kB │ gzip:   3.75 kB │ map:    47.65 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/Images-S2WTXNGG-1424b253.js                   20.72 kB │ gzip:   4.41 kB │ map:    49.14 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/preview-d06fc6bf.js                           21.08 kB │ gzip:   6.99 kB │ map:    68.54 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/chunk-6P7RB4HF-150ba47c.js                    22.05 kB │ gzip:   7.34 kB │ map:    51.70 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/Communicate-7JXCND2Z-d3f800fa.js              25.15 kB │ gzip:   6.58 kB │ map:    52.68 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/CRUD-I5EZL2FS-97d62e3d.js                     26.35 kB │ gzip:   5.92 kB │ map:    59.55 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/OverlayScrollbars-OL4C4TVX-03af70e8.js        28.95 kB │ gzip:  14.20 kB │ map:   108.25 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/Color-6VNJS4EI-38affeec.js                    31.13 kB │ gzip:  11.71 kB │ map:   113.47 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/preview-35a99a87.js                           45.29 kB │ gzip:  16.42 kB │ map:   234.32 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/index-0defdc21.js                             89.39 kB │ gzip:  26.73 kB │ map:   547.78 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/index-46294899.js                            213.03 kB │ gzip:  66.70 kB │ map:   663.69 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/config-5699cf5c.js                           213.44 kB │ gzip:  66.37 kB │ map:   804.98 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/Markdown.stories-d8affc88.js                 356.58 kB │ gzip: 110.34 kB │ map: 1,531.95 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/formatter-6736J7QO-6a96fa4b.js               601.72 kB │ gzip: 185.08 kB │ map: 1,318.70 kB
+../../../../../../var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf/assets/DocsRenderer-3PUGWF3O-90e35a92.js            619.16 kB │ gzip: 189.68 kB │ map: 1,932.65 kB
+
+(!) Some chunks are larger than 500 kBs after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 7.32s
+info => Output directory: /var/folders/n4/zh2bl4852wg8m3rwwv6_55j40000gn/T/chromatic--35358-528bNjF0hYgf
