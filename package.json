@@ -1,6 +1,6 @@
 {
   "name": "@harrisfauntleroy/design-system",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "private": false,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -29,7 +29,7 @@
     "test": "vitest --passWithNoTests",
     "test:cov": "vitest run --coverage",
     "prepare": "husky install",
-    "publish": "pnpm build && pnpm publish --access public"
+    "release": "pnpm build && pnpm publish --access public"
   },
   "tsup": {
     "entry": [
