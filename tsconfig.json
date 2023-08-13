@@ -30,5 +30,10 @@
     "**/*.config.js",
     "**/*.d.ts"
   ],
-  "exclude": ["dist", "node_modules","storybook-static", "./src/**/*.stories.*"]
+  "exclude": [
+    "dist",
+    "node_modules",
+    "storybook-static",
+    "./src/**/*.stories.*"
+  ]
 }
