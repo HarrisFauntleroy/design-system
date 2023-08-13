@@ -18,7 +18,7 @@
     "storybook:serve": "http-server storybook-static --port 6006 --silent",
     "test:ci": "pnpm test --ci --coverage --maxWorkers=2",
     "test:watch": "pnpm test --watchAll",
-    "test-storybook":  "test-storybook",
+    "test-storybook": "test-storybook",
     "type-check": "tsc --noEmit",
     "watch": "pnpm type-check --watch",
     "format": "prettier --write .",
