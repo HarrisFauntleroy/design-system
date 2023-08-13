@@ -1,25 +1,45 @@
 {
   "name": "@harrisfauntleroy/design-system",
-  "version": "1.0.0",
-  "type": "module",
+  "version": "2.0.3",
+  "private": false,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
+    "build": "tsup src/index.ts --dts",
     "build-storybook": "storybook build",
-    "build": "tsc && vite build",
+    "dev": "concurrently \"pnpm build --watch\" \"pnpm storybook\"",
     "preview": "vite preview",
+    "start": "NODE_ENV=production node dist/index.js",
+    "storybook": "storybook dev -p 6006",
+    "storybook:build": "storybook build",
+    "storybook:serve": "http-server storybook-static --port 6006 --silent",
+    "test:ci": "pnpm test --ci --coverage --maxWorkers=2",
+    "test:watch": "pnpm test --watchAll",
+    "type-check": "tsc --noEmit",
+    "watch": "pnpm type-check --watch",
     "format": "prettier --write .",
     "lint": "eslint . --color --plugin file-progress --rule \"file-progress/activate: 1\"",
     "lint:fix": "pnpm lint --fix",
-    "dev": "storybook dev -p 6006",
     "serve-storybook": "http-server storybook-static --port 6007 --silent",
     "chromatic": "npx chromatic --project-token=chpt_b1ce203545fcc69",
     "test": "vitest --passWithNoTests",
     "test:cov": "vitest run --coverage",
     "prepare": "husky install"
+  },
+  "tsup": {
+    "entry": [
+      "src/index.ts"
+    ],
+    "splitting": false,
+    "sourcemap": true,
+    "clean": true,
+    "external": [
+      "react",
+      "react-dom"
+    ]
   },
   "lint-staged": {
     "*.{ts,tsx}": [
@@ -110,7 +130,7 @@
       "dist",
       "generated",
       "node_modules",
-      "yarn",
+      "pnpm",
       "storybook-static",
       "styles"
     ],
@@ -181,7 +201,7 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jest": "^27.2.1",
     "eslint-plugin-jsx-a11y": "^6.7.1",
-    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-prettier": "5.0.0",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",

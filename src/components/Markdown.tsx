@@ -11,15 +11,14 @@ import remarkMath from "remark-math";
 import "../styles/github-markdown.css";
 import "../styles/katex/katex.css";
 
-function addToTableOfContents({
-  children,
-  ...props
-}: PropsWithChildren<{
+type TableOfContentsProps = PropsWithChildren<{
   node: {
     tagName: string;
   };
   children: string[];
-}>) {
+}>;
+
+function addToTableOfContents({ children, ...props }: TableOfContentsProps) {
   const level = Number(props.node.tagName.match(/h(\d)/)?.slice(1));
   if (level && children && typeof children[0] === "string") {
     const id = children[0].toLowerCase().replace(/[^a-z0-9]+/g, "-");
@@ -42,7 +41,7 @@ const renderers = {
   h6: addToTableOfContents,
 };
 
-export default function Markdown({ source }: { source: string }) {
+export function Markdown({ source }: { source: string }) {
   const { colorScheme } = useMantineColorScheme();
 
   return (

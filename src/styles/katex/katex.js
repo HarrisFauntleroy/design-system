@@ -17300,7 +17300,10 @@
     // \DeclareRobustCommand{\copyright}{%
     //    \ifmmode{\nfss@text{\textcopyright}}\else\textcopyright\fi}
 
-    defineMacro("\\textcopyright", "\\html@mathml{\\textcircled{c}}{\\char`©}");
+    defineMacro(
+      "\\textcopyright",
+      "\\html@mathml{\\textcircled{c}}{\\char`©}"
+    );
     defineMacro(
       "\\copyright",
       "\\TextOrMath{\\textcopyright}{\\text{\\textcopyright}}"

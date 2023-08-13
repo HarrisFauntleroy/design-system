@@ -42,7 +42,7 @@ Try out KaTeX [on the demo page](https://katex.org/#demo)!
 ### Starter template
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <!-- KaTeX requires the use of the HTML5 doctype. Without it, KaTeX may not render properly -->
 <html>
   <head>
