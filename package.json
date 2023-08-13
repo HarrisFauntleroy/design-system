@@ -18,7 +18,7 @@
     "storybook:serve": "http-server storybook-static --port 6006 --silent",
     "test:ci": "pnpm test --ci --coverage --maxWorkers=2",
     "test:watch": "pnpm test --watchAll",
-    "test-storybook":  "test-storybook --passWithNoTests",
+    "test-storybook":  "test-storybook",
     "type-check": "tsc --noEmit",
     "watch": "pnpm type-check --watch",
     "format": "prettier --write .",
@@ -28,7 +28,8 @@
     "chromatic": "npx chromatic --project-token=chpt_b1ce203545fcc69",
     "test": "vitest --passWithNoTests",
     "test:cov": "vitest run --coverage",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "publish": "pnpm build && pnpm publish --access public"
   },
   "tsup": {
     "entry": [

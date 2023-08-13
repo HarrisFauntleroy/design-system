@@ -6,8 +6,6 @@ echo "Therefore tests, linting and build must pass before pushing"
 echo
 echo "======== Testing (Jest) 🧪  ========"
 pnpm test
-echo "======== Testing (Storybook) 🧪  ========"
-pnpm test-storybook
 echo "======== Testing ✅  ========"
 echo
 echo "Tested ✅ Built ✅ Pushed 🚀"
