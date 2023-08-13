@@ -51,12 +51,12 @@ nvm use <version>
 
 ```bash
 # Install dependencies
-yarn
+pnpm
 ```
 
 ```bash
 # Start development server
-yarn dev
+pnpm dev
 ```
 
 **Commands**

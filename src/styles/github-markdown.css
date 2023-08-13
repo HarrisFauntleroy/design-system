@@ -1,5 +1,4 @@
-@media (prefers-color-scheme: dark) {
-    .markdown-body {
+    .markdown-body-dark {
       color-scheme: dark;
       --color-prettylights-syntax-comment: #8b949e;
       --color-prettylights-syntax-constant: #79c0ff;
@@ -34,7 +33,7 @@
       --color-fg-default: #c9d1d9;
       --color-fg-muted: #8b949e;
       --color-fg-subtle: #6e7681;
-      --color-canvas-default: #0d1117;
+      --color-canvas-default: #1A1B1E;
       --color-canvas-subtle: #161b22;
       --color-border-default: #30363d;
       --color-border-muted: #21262d;
@@ -44,10 +43,8 @@
       --color-attention-subtle: rgba(187,128,9,0.15);
       --color-danger-fg: #f85149;
     }
-  }
   
-  @media (prefers-color-scheme: light) {
-    .markdown-body {
+    .markdown-body-light {
       color-scheme: light;
       --color-prettylights-syntax-comment: #6e7781;
       --color-prettylights-syntax-constant: #0550ae;
@@ -92,7 +89,6 @@
       --color-attention-subtle: #fff8c5;
       --color-danger-fg: #cf222e;
     }
-  }
   
   .markdown-body {
     -ms-text-size-adjust: 100%;

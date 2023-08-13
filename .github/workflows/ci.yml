@@ -27,16 +27,16 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: "yarn"
+          cache: "pnpm"
 
       - name: Install dependencies 📦
-        run: yarn
+        run: pnpm
 
       - name: Build 🏗️
-        run: yarn build
+        run: pnpm build
 
       - name: Lint 🧹
-        run: yarn lint
+        run: pnpm lint
 
       - name: Test 🧪
-        run: yarn test
+        run: pnpm test

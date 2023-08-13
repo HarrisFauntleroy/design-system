@@ -1,31 +1,27 @@
-/**
- * Supports:
- * - Katex
- * - GFM (CSS needs improvement)
- * - Images
- * - Table of Contents
- */
+import { useMantineColorScheme } from "@mantine/core";
 import dynamic from "next/dynamic";
-import { PropsWithChildren, ReactNode, createElement } from "react";
+import { PropsWithChildren, createElement } from "react";
 import rehypeFormat from "rehype-format";
 import rehypeKatex from "rehype-katex";
 import rehypeStringify from "rehype-stringify";
 import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
 import "../styles/github-markdown.css";
+import "../styles/katex/katex.css";
+// import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const ReactMarkdown = dynamic<any>(() => import("react-markdown"), {
   ssr: false,
 });
 
-type TOC = {
+type TableOfContents = {
   level: number;
   id: string;
   title: string;
 };
 
-const tableOfContents: TOC[] = [];
+const tableOfContents: TableOfContents[] = [];
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function addToTableOfContents({ children, ...props }: PropsWithChildren<any>) {
@@ -49,17 +45,14 @@ const renderers = {
   h4: addToTableOfContents,
   h5: addToTableOfContents,
   h6: addToTableOfContents,
-  paragraph: ({ children }: { children: ReactNode }) => <p>{children}</p>,
-  listItem: ({ children }: { children: ReactNode }) => <li>{children}</li>,
-  blockquote: ({ children }: { children: ReactNode }) => (
-    <blockquote>{children}</blockquote>
-  ),
 };
 
 export default function Markdown({ source }: { source: string }) {
+  const { colorScheme } = useMantineColorScheme();
+
   return (
     <ReactMarkdown
-      className="markdown-body"
+      className={`markdown-body markdown-body-${colorScheme}`}
       components={renderers}
       remarkPlugins={[remarkGfm, remarkMath]}
       rehypePlugins={[rehypeKatex, rehypeFormat, rehypeStringify]}

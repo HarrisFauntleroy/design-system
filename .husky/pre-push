@@ -5,11 +5,11 @@ echo "This is a trunk based development branch"
 echo "Therefore tests, linting and build must pass before pushing"
 echo
 echo "======== Testing 🧪  ========"
-yarn test
+pnpm test
 echo "======== Testing ✅  ========"
 echo
 echo "======== Building 🏗️ ========"
-yarn build
+pnpm build
 echo "======== Building ✅ ========"
 echo
 echo "Tested ✅ Built ✅ Pushed 🚀"
