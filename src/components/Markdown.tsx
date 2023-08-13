@@ -8,8 +8,6 @@ import rehypeKatex from "rehype-katex";
 import rehypeStringify from "rehype-stringify";
 import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
-import "../styles/github-markdown.css";
-import "../styles/katex/katex.css";
 
 type TableOfContentsProps = PropsWithChildren<{
   node: {

@@ -7,7 +7,6 @@ import { useHotkeys, useLocalStorage } from "@mantine/hooks";
 import type { Preview } from "@storybook/react";
 import React from "react";
 import { useDarkMode } from "storybook-dark-mode";
-import { theme } from "../src/styles/theme";
 
 // initialiseMockServiceWorker()
 // initialiseI18n()
@@ -38,7 +37,7 @@ function ThemeWrapper(props: { children: React.ReactNode }) {
       toggleColorScheme={toggleColorScheme}
     >
       <MantineProvider
-        theme={{ ...theme, colorScheme }}
+        theme={{ colorScheme }}
         withGlobalStyles
         withNormalizeCSS
       >
