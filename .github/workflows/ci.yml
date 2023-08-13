@@ -24,19 +24,22 @@ jobs:
           fetch-depth: 2
 
       - name: Setup Node.js environment 📦
-        uses: actions/setup-node@v3
+        uses: pnpm/action-setup@v2
         with:
           node-version: 18
           cache: "pnpm"
 
       - name: Install dependencies 📦
-        run: pnpm
+        run: pnpm install
 
-      - name: Build 🏗️
-        run: pnpm build
+      - name: Build Storybook 🏗️
+        run: pnpm run build-storybook
 
       - name: Lint 🧹
-        run: pnpm lint
+        run: pnpm run lint
 
-      - name: Test 🧪
-        run: pnpm test
+      - name: Test (Jest) 🧪
+        run: pnpm run test
+
+      - name: Test (Storybook) 🧪
+        run: pnpm run test
