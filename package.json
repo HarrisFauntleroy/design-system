@@ -1,6 +1,5 @@
 {
-  "name": "design-system",
-  "private": false,
+  "name": "@harrisfauntleroy/design-system",
   "version": "1.0.0",
   "type": "module",
   "main": "dist/index.js",
