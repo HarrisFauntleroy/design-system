@@ -134,8 +134,8 @@ devDependencies:
     specifier: ^10.0.0
     version: 10.0.0(eslint@8.47.0)
   eslint-plugin-sonarjs:
-    specifier: 0.19.0
-    version: 0.19.0(eslint@8.47.0)
+    specifier: 0.20.0
+    version: 0.20.0(eslint@8.47.0)
   eslint-plugin-storybook:
     specifier: ^0.6.13
     version: 0.6.13(eslint@8.47.0)(typescript@5.1.6)
@@ -149,8 +149,8 @@ devDependencies:
     specifier: 29.5.0
     version: 29.5.0
   jest-environment-jsdom:
-    specifier: 29.5.0
-    version: 29.5.0
+    specifier: 29.6.2
+    version: 29.6.2
   lint-staged:
     specifier: 13.2.2
     version: 13.2.2
@@ -4567,7 +4567,7 @@ packages:
   /@types/node-fetch@2.6.4:
     resolution: {integrity: sha512-1ZX9fcN4Rvkvgv4E6PAY5WXUFWFcRWxZa3EW83UjycOB9ljJCedb2CupIP4RZMEwF/M3eTcCihbBRgwtGbg5Rg==}
     dependencies:
-      '@types/node': 16.18.40
+      '@types/node': 20.4.10
       form-data: 3.0.1
     dev: true
 
@@ -6851,8 +6851,8 @@ packages:
       eslint: 8.47.0
     dev: true
 
-  /eslint-plugin-sonarjs@0.19.0(eslint@8.47.0):
-    resolution: {integrity: sha512-6+s5oNk5TFtVlbRxqZN7FIGmjdPCYQKaTzFPmqieCmsU1kBYDzndTeQav0xtQNwZJWu5awWfTGe8Srq9xFOGnw==}
+  /eslint-plugin-sonarjs@0.20.0(eslint@8.47.0):
+    resolution: {integrity: sha512-BRhZ7BY/oTr6DDaxvx58ReTg7R+J8T+Y2ZVGgShgpml25IHBTIG7EudUtHuJD1zhtMgUEt59x3VNvUQRo2LV6w==}
     engines: {node: '>=14'}
     peerDependencies:
       eslint: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
@@ -8717,8 +8717,8 @@ packages:
       pretty-format: 29.6.2
     dev: true
 
-  /jest-environment-jsdom@29.5.0:
-    resolution: {integrity: sha512-/KG8yEK4aN8ak56yFVdqFDzKNHgF4BAymCx2LbPNPsUshUlfAl0eX402Xm1pt+eoG9SLZEUVifqXtX8SK74KCw==}
+  /jest-environment-jsdom@29.6.2:
+    resolution: {integrity: sha512-7oa/+266AAEgkzae8i1awNEfTfjwawWKLpiw2XesZmaoVVj9u9t8JOYx18cG29rbPNtkUlZ8V4b5Jb36y/VxoQ==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     peerDependencies:
       canvas: ^2.5.0
