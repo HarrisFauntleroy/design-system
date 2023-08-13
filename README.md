@@ -6,6 +6,9 @@
 
 <!-- PROJECT_DESCRIPTION -->
 
+This project employs tools such as Husky, linting, tests, and Chromatic for
+Storybook to maintain code quality and consistency.
+
 <!-- PROJECT_SCREENSHOT -->
 
 <!-- <img src="" alt="Design System" title="Design System" width="750"/> -->
@@ -22,8 +25,11 @@
 
 ## Features 💫
 
-- Markdown supporting Github Flavoured Markdown, Katex, Table of Contents and
-  eventually mermaid charts.
+- Markdown component 🗒️
+  - GitHub Flavoured Markdown support
+  - Katex incorporation
+  - User friendly Table of Contents
+  - And soon, mermaid charts too.
 
 <!-- LIST OF FEATURES -->
 
@@ -31,38 +37,23 @@
 
 Here's how you can set up Design System in your local dev environment:
 
-**Requirements**
-
-<!-- LIST OF REQUIREMENTS -->
-
-- Node >= 16
-
-Node is managed using Node Version Manager
-
-<a href="https://github.com/nvm-sh/logos"><img alt="nvm project logo" src="https://raw.githubusercontent.com/nvm-sh/logos/HEAD/nvm-logo-color.svg" height="50" /></a>
-
-```bash
-# Update node version
-nvm use <version>
-```
-
 **Installation**
 
 <!-- INSTALLATION INSTRUCTIONS -->
 
-```bash
+```zsh
 # Install dependencies
 pnpm
 ```
 
-```bash
+```zsh
 # Start development server
-pnpm dev
+pnpm storybook
 ```
 
 **Commands**
 
-```bash
+```zsh
 
 ```
 
