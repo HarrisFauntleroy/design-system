@@ -18,7 +18,7 @@
     "dev": "storybook dev -p 6006",
     "serve-storybook": "http-server storybook-static --port 6007 --silent",
     "chromatic": "npx chromatic --project-token=chpt_b1ce203545fcc69",
-    "test": "vitest",
+    "test": "vitest --passWithNoTests",
     "test:cov": "vitest run --coverage",
     "prepare": "husky install"
   },
