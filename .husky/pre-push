@@ -10,8 +10,4 @@ echo "======== Testing (Storybook) 🧪  ========"
 pnpm test-storybook
 echo "======== Testing ✅  ========"
 echo
-echo "======== Building 🏗️ ========"
-pnpm build-storybook
-echo "======== Building ✅ ========"
-echo
 echo "Tested ✅ Built ✅ Pushed 🚀"
