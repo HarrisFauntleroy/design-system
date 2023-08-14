@@ -1,4 +1,4 @@
-import { useMantineColorScheme } from "@mantine/core";
+import { useColorScheme } from "@mantine/hooks";
 import { PropsWithChildren, createElement } from "react";
 import { SpecialComponents } from "react-markdown/lib/ast-to-react";
 import { NormalComponents } from "react-markdown/lib/complex-types";
@@ -42,7 +42,7 @@ const renderers = {
 };
 
 export function Markdown({ source }: { source: string }) {
-  const { colorScheme } = useMantineColorScheme();
+  const colorScheme = useColorScheme();
 
   return (
     <ReactMarkdown
