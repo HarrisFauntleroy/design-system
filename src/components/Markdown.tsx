@@ -1,4 +1,3 @@
-import { useColorScheme } from "@mantine/hooks";
 import { PropsWithChildren, createElement } from "react";
 import { SpecialComponents } from "react-markdown/lib/ast-to-react";
 import { NormalComponents } from "react-markdown/lib/complex-types";
@@ -41,9 +40,13 @@ const renderers = {
   h6: addToTableOfContents,
 };
 
-export function Markdown({ source }: { source: string }) {
-  const colorScheme = useColorScheme();
-
+export function Markdown({
+  source,
+  colorScheme,
+}: {
+  source: string;
+  colorScheme: "light" | "dark";
+}) {
   return (
     <ReactMarkdown
       className={`markdown-body markdown-body-${colorScheme}`}
