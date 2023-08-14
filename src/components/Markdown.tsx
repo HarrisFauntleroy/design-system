@@ -1,3 +1,4 @@
+import classnames from "classnames";
 import { PropsWithChildren, createElement } from "react";
 import { SpecialComponents } from "react-markdown/lib/ast-to-react";
 import { NormalComponents } from "react-markdown/lib/complex-types";
@@ -40,16 +41,21 @@ const renderers = {
   h6: addToTableOfContents,
 };
 
-export function Markdown({
-  source,
-  colorScheme,
-}: {
+export type MarkdownProps = {
   source: string;
   colorScheme: "light" | "dark";
-}) {
+  className?: string;
+};
+
+export function Markdown({ source, className, colorScheme }: MarkdownProps) {
+  const markdownClassNames = classnames(
+    "markdown-body",
+    `markdown-body-${colorScheme}`,
+    className
+  );
   return (
     <ReactMarkdown
-      className={`markdown-body markdown-body-${colorScheme}`}
+      className={markdownClassNames}
       components={renderers as MarkdownComponents}
       remarkPlugins={[remarkGfm, remarkMath]}
       rehypePlugins={[rehypeKatex, rehypeFormat, rehypeStringify]}

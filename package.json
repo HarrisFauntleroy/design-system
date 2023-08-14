@@ -1,6 +1,6 @@
 {
   "name": "@harrisfauntleroy/design-system",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "private": false,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -10,7 +10,7 @@
   "scripts": {
     "build": "tsup src/index.ts --dts",
     "build-storybook": "storybook build",
-    "dev": "concurrently \"pnpm build --watch\" \"pnpm storybook\"",
+    "dev": "storybook dev -p 6006",
     "preview": "vite preview",
     "start": "NODE_ENV=production node dist/index.js",
     "storybook": "storybook dev -p 6006",
@@ -167,6 +167,7 @@
     "@emotion/react": "^11.11.1",
     "@mantine/core": "^6.0.19",
     "@mantine/hooks": "^6.0.19",
+    "classnames": "^2.3.2",
     "next": "^13.4.13",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
