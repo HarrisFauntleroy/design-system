@@ -2,28 +2,23 @@
 
 ![WIP Badge](https://img.shields.io/badge/Project%20Status%3A-wip%20%F0%9F%9A%A7-orange)
 
-[![CI Actions 🚀🤖](https://github.com/HarrisFauntleroy/design-system/actions/workflows/ci.yml/badge.svg)](https://github.com/HarrisFauntleroy/design-system/actions/workflows/ci.yml)[![Code Coverage 📊](https://github.com/HarrisFauntleroy/design-system/actions/workflows/coverage.yml/badge.svg)](https://github.com/HarrisFauntleroy/design-system/actions/workflows/coverage.yml)![GitHub commit activity](https://img.shields.io/github/commit-activity/w/HarrisFauntleroy/design-system?style=flat)
+[![CI Actions 🚀🤖](https://github.com/HarrisFauntleroy/design-system/actions/workflows/ci.yml/badge.svg)](https://github.com/HarrisFauntleroy/design-system/actions/workflows/ci.yml)![GitHub commit activity](https://img.shields.io/github/commit-activity/w/HarrisFauntleroy/design-system?style=flat)
 
-<!-- PROJECT_DESCRIPTION -->
-
-This project employs tools such as Husky, linting, tests, and Chromatic for
-Storybook to maintain code quality and consistency.
-
-<!-- PROJECT_SCREENSHOT -->
-
-<!-- <img src="" alt="Design System" title="Design System" width="750"/> -->
+Design System is a robust platform that leverages the power of various tools
+such as Husky, linting, tests, and Chromatic for Storybook to deliver
+high-quality and consistent code.
 
 ---
 
-## Table of Contents ⚙️
+## Table of Contents 📖
 
-1. [Features](#features-💫)
-2. [Local Development](#local-development-💻)
+1. [Features](#features-🚀)
+2. [Local Development](#local-development-🛠️)
 3. [Contributing](#contributing-🤝)
 4. [License](#license-⚖️)
 5. [Disclaimer](#disclaimer-🚨)
 
-## Features 💫
+## Features 🚀
 
 - Markdown component 🗒️
   - GitHub Flavoured Markdown support
@@ -31,44 +26,36 @@ Storybook to maintain code quality and consistency.
   - User friendly Table of Contents
   - And soon, mermaid charts too.
 
-<!-- LIST OF FEATURES -->
-
-## Local Development 💻
+## Local Development 🛠️
 
 Here's how you can set up Design System in your local dev environment:
 
 **Installation**
 
-<!-- INSTALLATION INSTRUCTIONS -->
-
 ```zsh
-# Install dependencies
-pnpm
+# Install dependencies with pnpm
+pnpm install
 ```
 
 ```zsh
-# Start development server
-pnpm storybook
+# Start development server with storybook
+pnpm run storybook
 ```
 
-**Commands**
-
-```zsh
-
-```
-
-<!-- LIST OF COMMANDS -->
+_Please refer to the package.json for additional details and scripts._
 
 ## Contributing 🤝
 
-<!-- GUIDELINES FOR CONTRIBUTION -->
+If you'd like to contribute, please see our
+[contribution guidelines](CONTRIBUTING.md) for more information.
 
 ## License ⚖️
 
-Distributed under the MIT License. See `LICENSE` for more information.
+This software is distributed under the terms of the MIT License. You can see the
+full license [here](LICENSE).
 
 ## Disclaimer 🚨
 
-This software is currently a work in progress and is considered in ALPHA state.
-Features will appear and disappear, APIs will be changed, bugs will be
-introduced, your feedback is always welcome! 🚧🔧
+This software is currently a work in progress and considered in the ALPHA phase.
+As we continue to update and improve, please expect features to evolve and APIs
+to change. We appreciate your patience and value your feedback! 🙌
