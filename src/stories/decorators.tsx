@@ -1,5 +1,5 @@
 import {
-  Button,
+  ActionIcon,
   ColorScheme,
   ColorSchemeProvider,
   Divider,
@@ -36,37 +36,15 @@ export function ThemeWrapper(Story: StoryFn) {
         withGlobalStyles
         withNormalizeCSS
       >
-        <Button.Group>
-          <Button variant="outline" onClick={toggleColorScheme}>
-            Colour scheme: {colorScheme}
-          </Button>
-        </Button.Group>
-        <Divider />
         <Story />
+        <Divider />
+        <ActionIcon variant="subtle" onClick={toggleColorScheme}>
+          {colorScheme === "dark" ? "🌙" : "☀️"}
+        </ActionIcon>
       </MantineProvider>
     </ColorSchemeProvider>
   );
 }
-
-export const WithColorSchemeProvider = (Story: StoryFn) => {
-  const [colorScheme, setColorScheme] = useState<ColorScheme>("light");
-
-  const toggleColorScheme = () => {
-    const nextColorScheme = colorScheme === "dark" ? "light" : "dark";
-    setColorScheme(nextColorScheme);
-  };
-
-  useHotkeys([["mod+J", () => toggleColorScheme()]]);
-
-  return (
-    <ColorSchemeProvider
-      colorScheme={colorScheme}
-      toggleColorScheme={toggleColorScheme}
-    >
-      <Story />
-    </ColorSchemeProvider>
-  );
-};
 
 export const WithLocalStoreUIVersion = (Story: StoryFn) => {
   const DEFAULT_UI_VERSION = "default";

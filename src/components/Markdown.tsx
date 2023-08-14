@@ -1,3 +1,4 @@
+import { useMantineColorScheme } from "@mantine/core";
 import { PropsWithChildren, createElement } from "react";
 import { SpecialComponents } from "react-markdown/lib/ast-to-react";
 import { NormalComponents } from "react-markdown/lib/complex-types";
@@ -40,16 +41,12 @@ const renderers = {
   h6: addToTableOfContents,
 };
 
-export function Markdown({
-  source,
-  theme,
-}: {
-  source: string;
-  theme: "light" | "dark";
-}) {
+export function Markdown({ source }: { source: string }) {
+  const { colorScheme } = useMantineColorScheme();
+
   return (
     <ReactMarkdown
-      className={`markdown-body markdown-body-${theme}`}
+      className={`markdown-body markdown-body-${colorScheme}`}
       components={renderers as MarkdownComponents}
       remarkPlugins={[remarkGfm, remarkMath]}
       rehypePlugins={[rehypeKatex, rehypeFormat, rehypeStringify]}
