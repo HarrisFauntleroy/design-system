@@ -20,11 +20,11 @@ high-quality and consistent code.
 
 ## Features 🚀
 
-- Markdown component 🗒️
-  - GitHub Flavoured Markdown support
-  - Katex incorporation
-  - User friendly Table of Contents
-  - And soon, mermaid charts too.
+- Markdown component 🗒️ with support for:
+  - GitHub Flavoured Markdown
+  - Table of Contents
+  - Mermaid diagrams
+  - Katex
 
 ## Local Development 🛠️
 
