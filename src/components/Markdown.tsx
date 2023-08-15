@@ -5,9 +5,12 @@ import { NormalComponents } from "react-markdown/lib/complex-types";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import rehypeFormat from "rehype-format";
 import rehypeKatex from "rehype-katex";
+import rehypeRaw from "rehype-raw";
 import rehypeStringify from "rehype-stringify";
 import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
+import remarkMermaid from "remark-mermaid-plugin";
+
 import "../styles/github-markdown.css";
 import "../styles/katex/katex.css";
 
@@ -57,8 +60,8 @@ export function Markdown({ source, className, colorScheme }: MarkdownProps) {
     <ReactMarkdown
       className={markdownClassNames}
       components={renderers as MarkdownComponents}
-      remarkPlugins={[remarkGfm, remarkMath]}
-      rehypePlugins={[rehypeKatex, rehypeFormat, rehypeStringify]}
+      remarkPlugins={[remarkGfm, remarkMath, remarkMermaid]}
+      rehypePlugins={[rehypeKatex, rehypeFormat, rehypeRaw, rehypeStringify]}
     >
       {source}
     </ReactMarkdown>
