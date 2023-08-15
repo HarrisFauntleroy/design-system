@@ -8,6 +8,8 @@ Design System is a robust platform that leverages the power of various tools
 such as Husky, linting, tests, and Chromatic for Storybook to deliver
 high-quality and consistent code.
 
+[📚 Check out the storybook hosted on Chromatic 🎨](https://main--64d482866191a67a0437dc6b.chromatic.com)
+
 ---
 
 ## Table of Contents 📖
