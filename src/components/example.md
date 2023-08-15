@@ -1,18 +1,22 @@
-## Table of Contents
+# Table of Contents
 
 1. [Introduction](#introduction)
+2. [Text Format](#text-format)
+3. [Code Blocks](#code-blocks)
+4. [Lists and Tables](#Lists-and-tables)
+5. [Autolink literals](#Autolink-literals)
+6. [Footnotes](#Footnotes)
+7. [Strikethrough](#Strikethrough)
+8. [Mathematical Equations](#Mathematical-equations)
+9. [Flowcharts](#Flowcharts)
 
 Press CMD+J to toggle theme
 
-```jsx
-// This is a code block
-import React from "react";
+# Introduction
 
-function Component() {
-  return <div>Hello, world!</div>;
-}
-export default Component;
-```
+> Your introduction text
+
+# Text Format
 
 # H1
 
@@ -26,49 +30,60 @@ export default Component;
 
 ###### H6
 
-_italic_ and **bold** text. [link](https://example.com).
-![image](https://raw.githubusercontent.com/HarrisFauntleroy/harrisfauntleroy.com/main/public/favicon-32x32.png)
+Text can emphasis by _italic_, **bold**, or ~strikethrough~
 
-A paragraph with _emphasis_ and **strong importance**.
+This is a paragraph with **strong importance**.
 
-> A block quote with ~strikethrough~ and a URL: https://reactjs.org.
+> This is a block quote.
+
+# Code Blocks
+
+```jsx
+// Example of a code block
+import React from "react";
+
+function Component() {
+  return <div>Hello, world!</div>;
+}
+export default Component;
+```
+
+# Lists and Tables
 
 - Lists
 - [ ] todo
 - [x] done
 
-A table:
+| a   | b   |   c |  d  |
+| --- | :-- | --: | :-: |
 
-| a   | b   |
-| --- | --- |
+| Product | Q1  | Q2  | Q3  | Q4  | Total |
+| ------- | --- | --- | --- | --- | ----- |
+| Apples  | 120 | 215 | 300 | 450 | 1085  |
+| Bananas | 80  | 150 | 240 | 200 | 670   |
+| Oranges | 200 | 175 | 230 | 180 | 785   |
+| Pears   | 150 | 150 | 150 | 150 | 600   |
+| Grapes  | 50  | 75  | 100 | 150 | 375   |
 
-## Autolink literals
+# Autolink literals
 
 www.example.com, https://example.com, and contact@example.com.
 
-## Footnote
+# Footnotes
 
 A note[^1]
 
 [^1]: Big note.
 
-## Strikethrough
+# Strikethrough
 
 ~one~ or ~~two~~ tildes.
 
-## Table
+# Mathematical Equations
 
-| a   | b   |   c |  d  |
-| --- | :-- | --: | :-: |
+Inline equation: $ e=mc^2 $
 
-## Tasklist
-
-- [ ] to do
-- [x] done
-
-Inline: $ e=mc^2 $
-
-Block:
+Block equations:
 
 $$
 e=mc^2
@@ -78,24 +93,21 @@ $$
 A = \lambda \cdot N
 $$
 
-- $A$ is the activity in Becquerel (Bq)
-- $\lambda$ is the decay constant.
-- $N$ is the number of atoms.
-
-The decay constant $\lambda$ can be determined by:
+- $A$: activity in Becquerel (Bq)
+- $\lambda$: decay constant
+- $N$: number of atoms.
 
 $$
 \lambda = \frac{Ln{2}}{T_{half}}
 $$
 
-where, $T_{half}$ is the half-life of the radioactive element. The half-life is
-the time it takes for half of a sample of a radioactive element to decay.
-
-Secondly, the Counts Per Minute(CPM) to Sieverts (Sv) conversion. The Sievert is
-a unit of absorbed radiation dose.
-
 $$
  X\, (Sv\,/ h) = R\, (CPM) \times Y\, ( \frac{Sv}{CPM})
 $$
 
-# Introduction
+# Flowcharts
+
+```mermaid
+graph LR
+    Start --> Stop
+```

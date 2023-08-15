@@ -7,8 +7,7 @@ on:
     types: [opened, synchronize]
 
 concurrency:
-  group:
-    ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -43,3 +42,8 @@ jobs:
 
       - name: Test (Storybook) 🧪
         run: pnpm run test
+
+      - name: Publish to NPM 📦
+      - uses: JS-DevTools/npm-publish@v2
+        with:
+          token: ${{ secrets.NPM_TOKEN }}

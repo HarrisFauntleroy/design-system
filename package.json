@@ -1,6 +1,6 @@
 {
   "name": "@harrisfauntleroy/design-system",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "private": false,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -174,9 +174,11 @@
     "react-markdown": "^8.0.7",
     "rehype-format": "^4.0.1",
     "rehype-katex": "^6.0.3",
+    "rehype-raw": "^6.1.1",
     "rehype-stringify": "^9.0.3",
     "remark-gfm": "^3.0.1",
     "remark-math": "^5.1.1",
+    "remark-mermaid-plugin": "^1.0.2",
     "tsup": "^7.2.0",
     "vite-plugin-dts": "^3.5.2",
     "vitest": "^0.34.1"
