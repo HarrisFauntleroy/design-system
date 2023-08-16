@@ -34,16 +34,10 @@ jobs:
       - name: Build 🏗️
         run: pnpm run build
 
-      - name: Build Storybook 🏗️
-        run: pnpm run build-storybook
-
       - name: Lint 🧹
         run: pnpm run lint
 
       - name: Test Jest 🧪
-        run: pnpm run test
-
-      - name: Test (Storybook) 🧪
         run: pnpm run test
 
       - name: Publish to NPM 📦
