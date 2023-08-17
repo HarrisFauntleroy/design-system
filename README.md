@@ -1,8 +1,8 @@
 # Design System 🎨
 
-![WIP Badge](https://img.shields.io/badge/Project%20Status%3A-wip%20%F0%9F%9A%A7-orange)
+![Active Badge](https://img.shields.io/badge/Project%20Status%3A-active%20%F0%9F%9F%A2-brightgreen)
 
-[![CI Actions 🚀🤖](https://github.com/HarrisFauntleroy/design-system/actions/workflows/ci.yml/badge.svg)](https://github.com/HarrisFauntleroy/design-system/actions/workflows/ci.yml)![GitHub commit activity](https://img.shields.io/github/commit-activity/w/HarrisFauntleroy/design-system?style=flat)
+[![CI Actions 🚀🤖](https://github.com/HarrisFauntleroy/design-system/actions/workflows/ci.yml/badge.svg)](https://github.com/HarrisFauntleroy/design-system/actions/workflows/ci.yml)![GitHub commit activity](https://img.shields.io/github/commit-activity/w/HarrisFauntleroy/design-system?style=flat)![npm](https://img.shields.io/npm/dt/%40harrisfauntleroy/design-system)
 
 Design System is a robust platform that leverages the power of various tools
 such as Husky, linting, tests, and Chromatic for Storybook to deliver
