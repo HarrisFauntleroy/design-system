@@ -1,12 +1,36 @@
 # Design System 🎨
 
-![Active Badge](https://img.shields.io/badge/Project%20Status%3A-active%20%F0%9F%9F%A2-brightgreen)
+<p align="center">
+    <a href="https://github.com/HarrisFauntleroy/design-system/releases">
+        <img alt="GitHub release" src="https://img.shields.io/github/package-json/v/HarrisFauntleroy/design-system?&style=for-the-badge">
+    </a>
+    <a href="/LICENSE.md">
+        <img alt="GitHub" src="https://img.shields.io/github/license/HarrisFauntleroy/design-system?&style=for-the-badge">
+    </a>
+    <a href="https://github.com/HarrisFauntleroy/design-system/graphs/contributors">
+        <img alt="GitHub contributors" src="https://img.shields.io/github/contributors-anon/HarrisFauntleroy/design-system?&style=for-the-badge">
+    </a>
+    <a href="https://github.com/HarrisFauntleroy/design-system/actions">
+        <img alt="GitHub branch checks state" src="https://img.shields.io/github/checks-status/HarrisFauntleroy/design-system/main?&style=for-the-badge">
+    </a>
+    <a href="https://github.com/HarrisFauntleroy/design-system/issues?q=is%3Aopen+is%3Aissue">
+        <img alt="GitHub issues" src="https://img.shields.io/github/issues/HarrisFauntleroy/design-system?&style=for-the-badge">
+    </a>
+    <a href="https://github.com/HarrisFauntleroy/design-system/issues?q=is%3Aopen+is%3Aissue">
+        <img alt="GitHub issues" src="https://img.shields.io/github/last-commit/HarrisFauntleroy/design-system?&style=for-the-badge">
+    </a>
+    </a>
+    <a href="https://github.com/HarrisFauntleroy/design-system/issues?q=is%3Aopen+is%3Aissue">
+        <img alt="GitHub issues" src="https://img.shields.io/github/commit-activity/w/HarrisFauntleroy/design-system?&style=for-the-badge">
+    </a>
+        <a href="https://www.npmjs.com/package/@harrisfauntleroy/design-system?activeTab=readme">
+        <img alt="npm downloads" src="https://img.shields.io/npm/dt/%40harrisfauntleroy/design-system?&style=for-the-badge">
+    </a>
+</p>
 
-[![CI Actions 🚀🤖](https://github.com/HarrisFauntleroy/design-system/actions/workflows/ci.yml/badge.svg)](https://github.com/HarrisFauntleroy/design-system/actions/workflows/ci.yml)![GitHub commit activity](https://img.shields.io/github/commit-activity/w/HarrisFauntleroy/design-system?style=flat)![npm](https://img.shields.io/npm/dt/%40harrisfauntleroy/design-system)
-
-Design System is a robust platform that leverages the power of various tools
-such as Husky, linting, tests, and Chromatic for Storybook to deliver
-high-quality and consistent code.
+Design System is a UI library that leverages the power of various tools such as
+Husky, ESlint, Prettier, and Chromatic for Storybook to deliver high-quality and
+consistent UI features across various projects.
 
 [📚 Check out the storybook hosted on Chromatic 🎨](https://main--64d482866191a67a0437dc6b.chromatic.com)
 
