@@ -1,7 +1,7 @@
 import { useMantineColorScheme } from "@mantine/core";
 import { Meta, StoryObj } from "@storybook/react";
-import { Markdown, MarkdownProps } from "../components/Markdown";
-import ExampleMarkdown from "../components/example.md?raw";
+import { Markdown, MarkdownProps } from "../components";
+import ExampleMarkdown from "../components/Markdown/example.md?raw";
 import "./Markdown.css";
 import { ThemeWrapper } from "./decorators";
 

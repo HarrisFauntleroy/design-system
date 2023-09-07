@@ -9,44 +9,44 @@
   ],
   "scripts": {
     "build": "tsup src/index.ts --dts",
-    "build-storybook": "storybook build",
+    "chromatic": "chromatic --exit-zero-on-changes",
     "dev": "storybook dev -p 6006",
-    "preview": "vite preview",
-    "start": "NODE_ENV=production node dist/index.js",
-    "storybook": "storybook dev -p 6006",
-    "storybook:build": "storybook build",
-    "storybook:serve": "http-server storybook-static --port 6006 --silent",
-    "test:ci": "pnpm test --ci --coverage --maxWorkers=2",
-    "test:watch": "pnpm test --watchAll",
-    "test-storybook": "test-storybook",
-    "type-check": "tsc --noEmit",
-    "watch": "pnpm type-check --watch",
     "format": "prettier --write .",
     "lint": "eslint . --color --plugin file-progress --rule \"file-progress/activate: 1\"",
     "lint:fix": "pnpm lint --fix",
-    "serve-storybook": "http-server storybook-static --port 6007 --silent",
-    "chromatic": "chromatic --exit-zero-on-changes",
-    "test": "vitest --passWithNoTests",
-    "test:cov": "vitest run --coverage",
     "prepare": "husky install",
-    "release": "pnpm build && pnpm publish --access public"
-  },
-  "tsup": {
-    "entry": [
-      "src/index.ts"
-    ],
-    "splitting": false,
-    "sourcemap": true,
-    "clean": true,
-    "external": [
-      "react",
-      "react-dom"
-    ]
+    "preview": "vite preview",
+    "release": "pnpm build && pnpm publish --access public",
+    "serve-storybook": "http-server storybook-static --port 6007 --silent",
+    "start": "NODE_ENV=production node dist/index.js",
+    "storybook": "storybook dev -p 6006 --no-open",
+    "build-storybook": "storybook build",
+    "storybook:serve": "http-server storybook-static --port 6006 --silent",
+    "test": "vitest --passWithNoTests",
+    "test-storybook": "test-storybook",
+    "test:ci": "pnpm test --ci --coverage --maxWorkers=2",
+    "test:cov": "vitest run --coverage",
+    "test:watch": "pnpm test --watchAll",
+    "type-check": "tsc --noEmit",
+    "watch": "pnpm type-check --watch"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
       "pnpm format",
       "pnpm lint:fix"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.3%",
+      "not ie 11",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
     ]
   },
   "prettier": {
@@ -138,19 +138,6 @@
     ],
     "root": true
   },
-  "browserslist": {
-    "production": [
-      ">0.3%",
-      "not ie 11",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
   "jest": {
     "coverageThreshold": {
       "global": {
@@ -163,10 +150,14 @@
       "^.+\\.(ts|tsx)$": "ts-jest"
     }
   },
+  "resolutions": {
+    "jackspeak": "2.1.1"
+  },
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@mantine/core": "^6.0.19",
     "@mantine/hooks": "^6.0.19",
+    "@uiw/react-md-editor": "^3.23.5",
     "classnames": "^2.3.2",
     "next": "^13.4.13",
     "react": "^18.2.0",
@@ -179,6 +170,7 @@
     "remark-gfm": "^3.0.1",
     "remark-math": "^5.1.1",
     "remark-mermaid-plugin": "^1.0.2",
+    "remark-toc": "^8.0.1",
     "tsup": "^7.2.0",
     "vite-plugin-dts": "^3.5.2",
     "vitest": "^0.34.1"
@@ -226,7 +218,16 @@
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
   },
-  "resolutions": {
-    "jackspeak": "2.1.1"
+  "tsup": {
+    "entry": [
+      "src/index.ts"
+    ],
+    "splitting": false,
+    "sourcemap": true,
+    "clean": true,
+    "external": [
+      "react",
+      "react-dom"
+    ]
   }
 }
