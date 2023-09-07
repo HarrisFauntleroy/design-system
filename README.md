@@ -46,7 +46,7 @@ consistent UI features across various projects.
 
 ## Features 🚀
 
-- Markdown component 🗒️ with support for:
+- Markdown Editor and Viewers 🗒️ with support for:
   - GitHub Flavoured Markdown
   - Table of Contents
   - Mermaid diagrams
