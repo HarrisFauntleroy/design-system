@@ -44,17 +44,18 @@ const renderers = {
 };
 
 export type MarkdownProps = {
-  source: string;
+  value: string;
   colorScheme: "light" | "dark";
   className?: string;
 };
 
-export function Markdown({ source, className, colorScheme }: MarkdownProps) {
+export function Markdown({ value, className, colorScheme }: MarkdownProps) {
   const markdownClassNames = classnames(
     "markdown-body",
     `markdown-body-${colorScheme}`,
     className
   );
+
   return (
     <ReactMarkdown
       className={markdownClassNames}
@@ -62,7 +63,7 @@ export function Markdown({ source, className, colorScheme }: MarkdownProps) {
       remarkPlugins={[remarkGfm, remarkMath, remarkMermaid]}
       rehypePlugins={[rehypeKatex, rehypeFormat, rehypeRaw, rehypeStringify]}
     >
-      {source}
+      {value}
     </ReactMarkdown>
   );
 }

@@ -21,7 +21,7 @@ const MarkdownWithHooks = ({ className }: Partial<MarkdownProps>) => {
     <Markdown
       className={className}
       colorScheme={colorScheme}
-      source={ExampleMarkdown}
+      value={ExampleMarkdown}
     />
   );
 };

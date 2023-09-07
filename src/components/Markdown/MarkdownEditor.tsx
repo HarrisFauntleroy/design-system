@@ -1,4 +1,5 @@
-import MDEditor from "@uiw/react-md-editor";
+import MDEditor, { MDEditorProps } from "@uiw/react-md-editor";
+import classnames from "classnames";
 import rehypeFormat from "rehype-format";
 import rehypeKatex from "rehype-katex";
 import rehypeRaw from "rehype-raw";
@@ -9,11 +10,13 @@ import remarkMermaid from "remark-mermaid-plugin";
 import "../../styles/github-markdown.css";
 import "../../styles/katex/katex.css";
 
-type MarkdownEditorProps = {
+type MarkdownEditorProps = MDEditorProps & {
   value: string;
   onChange?: () => void;
   showEditor?: boolean;
   showViewer?: boolean;
+  colorScheme?: "light" | "dark";
+  className?: string;
 };
 
 export const MarkdownEditor = ({
@@ -21,14 +24,30 @@ export const MarkdownEditor = ({
   onChange,
   showEditor = true,
   showViewer = false,
+  colorScheme = "light",
+  className,
+  ...props
 }: MarkdownEditorProps) => {
+  const markdownClassNames = classnames(
+    "markdown-body",
+    `markdown-body-${colorScheme}`,
+    className
+  );
+
   return (
     <>
       {showEditor && (
-        <MDEditor value={value} onChange={onChange} contentEditable />
+        <MDEditor
+          className={markdownClassNames}
+          value={value}
+          onChange={onChange}
+          contentEditable
+          {...props}
+        />
       )}
       {showViewer && (
         <MDEditor.Markdown
+          className={markdownClassNames}
           source={value}
           remarkPlugins={[remarkGfm, remarkMath, remarkMermaid]}
           rehypePlugins={[
@@ -37,6 +56,7 @@ export const MarkdownEditor = ({
             rehypeRaw,
             rehypeStringify,
           ]}
+          {...props}
         />
       )}
     </>
