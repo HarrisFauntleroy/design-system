@@ -1,5 +1,4 @@
 import MDEditor, { MDEditorProps } from "@uiw/react-md-editor";
-import classnames from "classnames";
 import rehypeFormat from "rehype-format";
 import rehypeKatex from "rehype-katex";
 import rehypeRaw from "rehype-raw";
@@ -24,21 +23,12 @@ export const MarkdownEditor = ({
   onChange,
   showEditor = true,
   showViewer = false,
-  colorScheme = "light",
-  className,
   ...props
 }: MarkdownEditorProps) => {
-  const markdownClassNames = classnames(
-    "markdown-body",
-    `markdown-body-${colorScheme}`,
-    className
-  );
-
   return (
     <>
       {showEditor && (
         <MDEditor
-          className={markdownClassNames}
           value={value}
           onChange={onChange}
           contentEditable
@@ -47,7 +37,6 @@ export const MarkdownEditor = ({
       )}
       {showViewer && (
         <MDEditor.Markdown
-          className={markdownClassNames}
           source={value}
           remarkPlugins={[remarkGfm, remarkMath, remarkMermaid]}
           rehypePlugins={[
