@@ -9,7 +9,7 @@ import remarkMermaid from "remark-mermaid-plugin";
 import "../../styles/github-markdown.css";
 import "../../styles/katex/katex.css";
 
-type MarkdownEditorProps = MDEditorProps & {
+type MarkdownEditorProperties = MDEditorProps & {
   value: string;
   onChange?: () => void;
   showEditor?: boolean;
@@ -23,8 +23,8 @@ export const MarkdownEditor = ({
   onChange,
   showEditor = true,
   showViewer = false,
-  ...props
-}: MarkdownEditorProps) => {
+  ...properties
+}: MarkdownEditorProperties) => {
   return (
     <>
       {showEditor && (
@@ -32,7 +32,7 @@ export const MarkdownEditor = ({
           value={value}
           onChange={onChange}
           contentEditable
-          {...props}
+          {...properties}
         />
       )}
       {showViewer && (
@@ -45,7 +45,7 @@ export const MarkdownEditor = ({
             rehypeRaw,
             rehypeStringify,
           ]}
-          {...props}
+          {...properties}
         />
       )}
     </>

@@ -13,20 +13,23 @@ import remarkMermaid from "remark-mermaid-plugin";
 import "../../styles/github-markdown.css";
 import "../../styles/katex/katex.css";
 
-type TableOfContentsProps = PropsWithChildren<{
+type TableOfContentsProperties = PropsWithChildren<{
   node: {
     tagName: string;
   };
   children: string[];
 }>;
 
-function addToTableOfContents({ children, ...props }: TableOfContentsProps) {
-  const level = Number(props.node.tagName.match(/h(\d)/)?.slice(1));
+function addToTableOfContents({
+  children,
+  ...properties
+}: TableOfContentsProperties) {
+  const level = Number(properties.node.tagName.match(/h(\d)/)?.slice(1));
   if (level && children && typeof children[0] === "string") {
-    const id = children[0].toLowerCase().replace(/[^a-z0-9]+/g, "-");
-    return createElement(props.node.tagName, { id }, children);
+    const id = children[0].toLowerCase().replaceAll(/[^\da-z]+/g, "-");
+    return createElement(properties.node.tagName, { id }, children);
   } else {
-    return createElement(props.node.tagName, props, children);
+    return createElement(properties.node.tagName, properties, children);
   }
 }
 
@@ -43,13 +46,17 @@ const renderers = {
   h6: addToTableOfContents,
 };
 
-export type MarkdownProps = {
+export type MarkdownProperties = {
   value: string;
   colorScheme: "light" | "dark";
   className?: string;
 };
 
-export function Markdown({ value, className, colorScheme }: MarkdownProps) {
+export function Markdown({
+  value,
+  className,
+  colorScheme,
+}: MarkdownProperties) {
   const markdownClassNames = classnames(
     "markdown-body",
     `markdown-body-${colorScheme}`,

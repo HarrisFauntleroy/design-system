@@ -1,6 +1,6 @@
 import { useMantineColorScheme } from "@mantine/core";
 import { Meta, StoryObj } from "@storybook/react";
-import { Markdown, MarkdownProps } from "../components";
+import { Markdown, MarkdownProps as MarkdownProperties } from "../components";
 import ExampleMarkdown from "../components/Markdown/example.md?raw";
 import "./Markdown.css";
 import { ThemeWrapper } from "./decorators";
@@ -14,7 +14,7 @@ export default meta;
 
 type Story = StoryObj<typeof Markdown>;
 
-const MarkdownWithHooks = ({ className }: Partial<MarkdownProps>) => {
+const MarkdownWithHooks = ({ className }: Partial<MarkdownProperties>) => {
   const { colorScheme } = useMantineColorScheme();
 
   return (
