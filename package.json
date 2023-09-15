@@ -111,7 +111,6 @@
       ],
       "react/react-in-jsx-scope": "off",
       "security/detect-object-injection": "off",
-      "@next/next/no-html-link-for-pages": "off",
       "simple-import-sort/imports": [
         "off",
         {
@@ -157,11 +156,8 @@
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
-    "@mantine/core": "^6.0.19",
-    "@mantine/hooks": "^6.0.19",
     "@uiw/react-md-editor": "^3.23.5",
     "classnames": "^2.3.2",
-    "next": "^13.4.13",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-markdown": "^8.0.7",

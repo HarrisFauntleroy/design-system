@@ -10,7 +10,7 @@ install:
 	@echo "Installing dependencies..."
 	pnpm install
 
-# Build the Next.js application
+# Build the application
 build:
 	@echo "Building the application..."
 	pnpm run build
@@ -25,8 +25,8 @@ lint:
 	@echo "Linting..."
 	pnpm run lint
 
-# Clean up the .next directory
+# Clean up the node_modules directory
 clean:
 	@echo "Cleaning up..."
-	rm -rf .next
+	rm -rf node_modules
 
