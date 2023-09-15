@@ -11,6 +11,8 @@ import {
   a11yDark,
   a11yLight,
 } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import "react-syntax-highlighter/dist/esm/styles/hljs/a11y-dark";
+import "react-syntax-highlighter/dist/esm/styles/hljs/a11y-light";
 import rehypeFormat from "rehype-format";
 import rehypeKatex from "rehype-katex";
 import rehypeRaw from "rehype-raw";
