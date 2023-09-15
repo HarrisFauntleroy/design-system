@@ -3,11 +3,9 @@ import { useState } from "react";
 import { MarkdownEditor } from "../components/Markdown";
 import ExampleMarkdown from "../components/Markdown/example.md?raw";
 import "./Markdown.css";
-import { ThemeWrapper } from "./decorators";
 
 const meta: Meta<typeof MarkdownEditor> = {
   component: MarkdownEditor,
-  decorators: [ThemeWrapper],
 };
 
 export default meta;

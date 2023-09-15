@@ -15,6 +15,11 @@ const preview: Preview = {
     msw: {
       handlers: [],
     },
+    darkMode: {
+      darkClass: "dark",
+      lightClass: "light",
+    },
+    backgrounds: { padding: 0 },
   },
 };
 

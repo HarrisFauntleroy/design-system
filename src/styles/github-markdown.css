@@ -523,7 +523,6 @@
 .markdown-body ol,
 .markdown-body dl,
 .markdown-body table,
-.markdown-body pre,
 .markdown-body details {
   margin-top: 0;
   margin-bottom: 16px;
@@ -841,7 +840,6 @@
 
 .markdown-body .highlight pre,
 .markdown-body pre {
-  padding: 16px;
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;

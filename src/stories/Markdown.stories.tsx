@@ -1,13 +1,11 @@
-import { useMantineColorScheme } from "@mantine/core";
 import { Meta, StoryObj } from "@storybook/react";
-import { Markdown, MarkdownProps as MarkdownProperties } from "../components";
+import { useDarkMode } from "storybook-dark-mode";
+import { Markdown, MarkdownProperties } from "../components";
 import ExampleMarkdown from "../components/Markdown/example.md?raw";
 import "./Markdown.css";
-import { ThemeWrapper } from "./decorators";
 
 const meta: Meta<typeof Markdown> = {
   component: Markdown,
-  decorators: [ThemeWrapper],
 };
 
 export default meta;
@@ -15,12 +13,12 @@ export default meta;
 type Story = StoryObj<typeof Markdown>;
 
 const MarkdownWithHooks = ({ className }: Partial<MarkdownProperties>) => {
-  const { colorScheme } = useMantineColorScheme();
+  const darkMode = useDarkMode();
 
   return (
     <Markdown
       className={className}
-      colorScheme={colorScheme}
+      colorScheme={darkMode ? "dark" : "light"}
       value={ExampleMarkdown}
     />
   );
