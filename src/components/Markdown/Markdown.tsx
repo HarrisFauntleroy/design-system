@@ -7,10 +7,8 @@ import {
 import { NormalComponents } from "react-markdown/lib/complex-types";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import {
-  a11yDark,
-  a11yLight,
-} from "react-syntax-highlighter/dist/esm/styles/hljs";
+import dark from "react-syntax-highlighter/dist/cjs/styles/prism/material-dark";
+import light from "react-syntax-highlighter/dist/cjs/styles/prism/material-light";
 import rehypeFormat from "rehype-format";
 import rehypeKatex from "rehype-katex";
 import rehypeRaw from "rehype-raw";
@@ -85,6 +83,11 @@ export function Markdown({
         return children;
       }
 
+      // Exclude Katex from syntax highlighting
+      if (match && match[1] === "katex") {
+        return children;
+      }
+
       function copyToClipboard() {
         navigator.clipboard.writeText(String(children));
       }
@@ -93,7 +96,7 @@ export function Markdown({
         <div style={{ position: "relative" }}>
           <SyntaxHighlighter
             language={match[1]}
-            style={colorScheme === "dark" ? a11yDark : a11yLight}
+            style={colorScheme === "light" ? light : dark}
             showLineNumbers
             {...properties}
           >
