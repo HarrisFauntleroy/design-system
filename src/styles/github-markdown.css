@@ -517,6 +517,10 @@
   outline: none;
 }
 
+.markdown-body pre pre {
+  margin-bottom: 0
+}
+
 .markdown-body p,
 .markdown-body blockquote,
 .markdown-body ul,
@@ -839,13 +843,16 @@
   word-break: normal;
 }
 
+.markdown-body .highlight pre {
+  background-color: var(--color-canvas-subtle);
+}
+
 .markdown-body .highlight pre,
 .markdown-body pre {
   padding: 16px;
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;
-  background-color: var(--color-canvas-subtle);
   border-radius: 6px;
 }
 
