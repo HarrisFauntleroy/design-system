@@ -7,8 +7,8 @@ import {
 import { NormalComponents } from "react-markdown/lib/complex-types";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import dark from "react-syntax-highlighter/dist/cjs/styles/hljs/dracula";
-import light from "react-syntax-highlighter/dist/cjs/styles/hljs/paraiso-light";
+import dark from "react-syntax-highlighter/dist/cjs/styles/hljs/a11y-dark";
+import light from "react-syntax-highlighter/dist/cjs/styles/hljs/a11y-light";
 import rehypeFormat from "rehype-format";
 import rehypeKatex from "rehype-katex";
 import rehypeRaw from "rehype-raw";
