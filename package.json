@@ -13,10 +13,10 @@
     "dev": "storybook dev -p 6006",
     "format": "prettier --write .",
     "lint": "eslint . --color --plugin file-progress --rule \"file-progress/activate: 1\"",
-    "lint:fix": "pnpm lint --fix",
+    "lint:fix": "bun lint --fix",
     "prepare": "husky install",
     "preview": "vite preview",
-    "release": "pnpm build && pnpm publish --access public",
+    "release": "bun build && bun publish --access public",
     "serve-storybook": "http-server storybook-static --port 6007 --silent",
     "start": "NODE_ENV=production node dist/index.js",
     "storybook": "storybook dev -p 6006 --no-open",
@@ -24,16 +24,16 @@
     "storybook:serve": "http-server storybook-static --port 6006 --silent",
     "test": "vitest --passWithNoTests",
     "test-storybook": "test-storybook",
-    "test:ci": "pnpm test --ci --coverage --maxWorkers=2",
+    "test:ci": "bun test --ci --coverage --maxWorkers=2",
     "test:cov": "vitest run --coverage",
-    "test:watch": "pnpm test --watchAll",
+    "test:watch": "bun test --watchAll",
     "type-check": "tsc --noEmit",
-    "watch": "pnpm type-check --watch"
+    "watch": "bun type-check --watch"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "pnpm format",
-      "pnpm lint:fix"
+      "bun format",
+      "bun lint:fix"
     ]
   },
   "browserslist": {
@@ -129,11 +129,9 @@
       ]
     },
     "ignorePatterns": [
-      ".pnpm",
       "dist",
       "generated",
       "node_modules",
-      "pnpm",
       "storybook-static",
       "styles"
     ],

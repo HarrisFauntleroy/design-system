@@ -7,8 +7,7 @@ on:
     types: [opened, synchronize]
 
 concurrency:
-  group:
-    ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -21,25 +20,25 @@ jobs:
         node-version: [18]
     steps:
       - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2
+      - uses: oven-sh/setup-bun@v1
         with:
-          version: 8
+          bun-version: latest
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: "pnpm"
+          cache: "bun"
       - name: Install dependencies 📦
-        run: pnpm install
+        run: bun install
 
       - name: Build 🏗️
-        run: pnpm run build
+        run: bun run build
 
       - name: Lint 🧹
-        run: pnpm run lint
+        run: bun run lint
 
       - name: Test Jest 🧪
-        run: pnpm run test
+        run: bun run test
 
       - name: Publish to NPM 📦
         uses: JS-DevTools/npm-publish@v2

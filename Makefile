@@ -3,27 +3,27 @@
 # Run the development server
 dev:
 	@echo "Starting development server..."
-	pnpm run dev
+	bun run dev
 
 # Install dependencies
 install:
 	@echo "Installing dependencies..."
-	pnpm install
+	bun install
 
 # Build the application
 build:
 	@echo "Building the application..."
-	pnpm run build
+	bun run build
 
 # Run tests
 test:
 	@echo "Running tests..."
-	pnpm run test
+	bun run test
 
 # Lint the codebase
 lint:
 	@echo "Linting..."
-	pnpm run lint
+	bun run lint
 
 # Clean up the node_modules directory
 clean:
