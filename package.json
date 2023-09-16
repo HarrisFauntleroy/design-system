@@ -13,10 +13,10 @@
     "dev": "storybook dev -p 6006",
     "format": "prettier --write .",
     "lint": "eslint . --color --plugin file-progress --rule \"file-progress/activate: 1\"",
-    "lint:fix": "bun lint --fix",
+    "lint:fix": "bun run lint --fix",
     "prepare": "husky install",
     "preview": "vite preview",
-    "release": "bun build && bun publish --access public",
+    "release": "bun run run build && bun publish --access public",
     "serve-storybook": "http-server storybook-static --port 6007 --silent",
     "start": "NODE_ENV=production node dist/index.js",
     "storybook": "storybook dev -p 6006 --no-open",
@@ -24,16 +24,16 @@
     "storybook:serve": "http-server storybook-static --port 6006 --silent",
     "test": "vitest --passWithNoTests",
     "test-storybook": "test-storybook",
-    "test:ci": "bun test --ci --coverage --maxWorkers=2",
+    "test:ci": "bun run test --ci --coverage --maxWorkers=2",
     "test:cov": "vitest run --coverage",
-    "test:watch": "bun test --watchAll",
+    "test:watch": "bun run test --watchAll",
     "type-check": "tsc --noEmit",
-    "watch": "bun type-check --watch"
+    "watch": "bun run type-check --watch"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "bun format",
-      "bun lint:fix"
+      "bun run format",
+      "bun run lint:fix"
     ]
   },
   "browserslist": {
