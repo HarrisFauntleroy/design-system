@@ -59,13 +59,13 @@ Here's how you can set up Design System in your local dev environment:
 **Installation**
 
 ```zsh
-# Install dependencies with pnpm
-pnpm install
+# Install dependencies with bun
+bun install
 ```
 
 ```zsh
 # Start development server with storybook
-pnpm run storybook
+bun run storybook
 ```
 
 _Please refer to the package.json for additional details and scripts._
@@ -80,8 +80,10 @@ This repository adopts a **Trunk-Based Development** approach to encourage:
 
 ### Automated Git Hooks
 
-To maintain code quality, we've set up automated Git hooks that perform the
-following tasks before any `git push` operation:
+To maintain code quality, we've set up automated Git hooks that perform various
+tasks at different stages of the Git workflow:
+
+Pre-Commit Hooks:
 
 - **Linting**: Enforces a consistent code style across the codebase.
 - **Formatting**: Applies standardized code formatting.
