@@ -28,9 +28,9 @@
     </a>
 </p>
 
-Design System is a UI library that leverages the power of various tools such as
-Husky, ESlint, Prettier, and Chromatic for Storybook to deliver high-quality and
-consistent UI features across various projects.
+Design System is a UI library that utilizes tools such as Husky, ESLint,
+Prettier, and Chromatic with Storybook to provide consistent and high-quality UI
+features for different projects.
 
 [📚 Check out the storybook hosted on Chromatic 🎨](https://main--64d482866191a67a0437dc6b.chromatic.com)
 
@@ -38,23 +38,25 @@ consistent UI features across various projects.
 
 ## Table of Contents 📖
 
-1. [Features](#features-🚀)
-2. [Local Development](#local-development-🛠️)
-3. [Contributing](#contributing-🤝)
-4. [License](#license-⚖️)
-5. [Disclaimer](#disclaimer-🚨)
+- [Design System 🎨](#design-system-)
+  - [Table of Contents 📖](#table-of-contents-)
+  - [Features 🚀](#features-)
+  - [Local Development 🛠️](#local-development-️)
+  - [Trunk-Based Development and Git Hooks](#trunk-based-development-and-git-hooks)
+    - [Automated Git Hooks](#automated-git-hooks)
+  - [Contributing 🤝](#contributing-)
+  - [License ⚖️](#license-️)
+  - [Disclaimer 🚨](#disclaimer-)
 
 ## Features 🚀
 
-- Markdown Editor and Viewers 🗒️ with support for:
-  - GitHub Flavoured Markdown
-  - Table of Contents
-  - Mermaid diagrams
-  - Katex
+- Markdown Editor
+- Markdown Viewer
 
 ## Local Development 🛠️
 
-Here's how you can set up Design System in your local dev environment:
+Here's how you can set up Design System in your local **development**
+environment:
 
 **Installation**
 
