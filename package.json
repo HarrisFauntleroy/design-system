@@ -148,7 +148,7 @@
     }
   },
   "resolutions": {
-    "jackspeak": "2.1.1"
+    "jackspeak": "2.3.6"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
