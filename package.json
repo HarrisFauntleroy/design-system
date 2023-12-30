@@ -161,7 +161,7 @@
     "rehype-format": "^4.0.1",
     "rehype-katex": "^6.0.3",
     "rehype-raw": "^6.1.1",
-    "rehype-stringify": "^9.0.3",
+    "rehype-stringify": "^9.0.3 || ^10.0.0",
     "remark-gfm": "^3.0.1",
     "remark-math": "^5.1.1",
     "remark-mermaid-plugin": "^1.0.2",
