@@ -111,3 +111,7 @@ full license [here](LICENSE).
 This software is currently a work in progress and considered in the ALPHA phase.
 As we continue to update and improve, please expect features to evolve and APIs
 to change. We appreciate your patience and value your feedback! 🙌
+
+---
+
+![Visualization of this repo](./diagram.svg)
